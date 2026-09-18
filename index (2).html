@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Vedhi - Recruitment Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <h1>Data Vedhi</h1>
+      <p class="subtitle">Recruitment Dashboard</p>
+      <nav>
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="candidates">Candidates</button>
+        <button class="nav-btn" data-view="shortlisted">Shortlisted</button>
+        <button class="nav-btn" data-view="selected">Selected</button>
+        <button class="nav-btn" data-view="waiting">Waiting List</button>
+        <button class="nav-btn" data-view="trash">Trash</button>
+      </nav>
+      <button id="logoutBtn" class="logout-btn">Reset Demo Data</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2 id="pageTitle">Dashboard</h2>
+          <p id="pageSubtitle">Manage your recruitment process</p>
+        </div>
+        <button class="primary" data-action="add">+ Add Application</button>
+      </header>
+
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <dialog id="modal">
+    <div class="modal-box">
+      <button class="close-btn" data-action="close-modal" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
